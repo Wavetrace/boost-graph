@@ -455,9 +455,6 @@ BOOST_concept(VertexIndexGraph, (Graph))
         ignore_unused_variable_warning(m);
         ignore_unused_variable_warning(x);
 
-        // This is relaxed
-        renumber_vertex_indices(g);
-
         const_constraints(g);
     }
     void const_constraints(const Graph& g_)
